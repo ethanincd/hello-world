@@ -11,4 +11,5 @@ pipeline:
      commands:
        - echo $$KEY
        - pwd
+       - go run main.go
        - ls
