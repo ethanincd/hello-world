@@ -1,0 +1,14 @@
+workspace:
+  base: /srv/drone-demo
+  path: .
+
+pipeline:
+  build:
+     image: golang:alpine
+     # pull: true
+     environment:
+       - KEY=VALUE
+     commands:
+       - echo $$KEY
+       - pwd
+       - ls
